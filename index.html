@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>RBDream</title>
+    <title>RB Dream</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -21,7 +21,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">Navbar</a>
           <button
@@ -79,7 +79,7 @@
       <div class="container">
         <div class="row">
           <div class="offset-sm-2 col-sm-8">
-            <div class="headerText">
+            <div class="headerText text-center">
               <h2>Explore Fishing</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -345,5 +345,10 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      $(document).scroll(function(){
+        $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+      });
+    </script>
   </body>
 </html>
