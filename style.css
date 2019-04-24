@@ -260,3 +260,13 @@ p {
   padding: 10px 20px;
   float: right;
 }
+
+/* Contact */
+
+.contact {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(#000, transparent), url(/img/Map.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
