@@ -270,3 +270,31 @@ p {
   background-size: cover;
   min-height: 100vh;
 }
+
+.contact form {
+  position: relative;
+  z-index: 1000;
+}
+
+.contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  height: 50px;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.contact .form-control:hover,
+.contact .form-control:focus {
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: none;
+}
+
+.contact label {
+  color: #fff;
+  font-size: 1.25rem;
+}
